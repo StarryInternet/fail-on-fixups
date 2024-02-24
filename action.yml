@@ -1,0 +1,7 @@
+name: Fail-on-fixups
+description: Check for leftover fixup commits (pass/fail)
+runs:
+  using: composite
+  steps:
+    - run: ${{ github.action_path }}/fail-on-fixups.sh
+      shell: bash
